@@ -41,12 +41,13 @@ The cache tables are statically populated with flow policies that achieved the h
 2. Follow the installation guide on the Readme file, use "Option 2 - Manually install Docker and other dependencies".  
 3. This tutorial contains several exercice, some of them are irrelavant to our project. Yet, in order to make sure that the setup of the enviroment will work we suggest coping all the files in the "solutions" repository to the corresponding place in the main repository "ngsdn-tutorial". In addition, we highly recommend following the steps in Exercises 3-6 in order to gain a deeper understanding of the process.  
 4. Open "link to git" and clone the repository using "git clone -b advanced link to git".  
-5. Replace the Makefile and  from the main repository "ngsdn-tutorial" with the Makefile from /Dynamic-Rule-Caching/Environment.
-6. Replace the netcfg.json and topo-v6.py files from the "ngsdn-tutorial/mininet" repository with those files from -- path to files--  
+5. Replace the Makefile from the main repository "ngsdn-tutorial" with the Makefile from /Dynamic-Rule-Caching/Environment.  
+6. add copyDocker form /Dynamic-Rule-Caching/Environment to the main repository "ngsdn-tutorial".  
+7. Replace the netcfg.json and topo-v6.py files from the "ngsdn-tutorial/mininet" repository with those files from /Dynamic-Rule-Caching/Cache.    
 Upon completing the aforementioned steps, an emulation environment will be established with the topology illustrated in the above figure. The switches utilized in the environment will be BMv2 switches, while the controller employed will be ONOS.
 In order to modify the topology, changes need to be made to both the topo-v6.py and netcfg.json files. 
 
-##Experiments
+## Experiments
 1. In the repository, `ngsdn-tutorial` open a terminal, run:  
    $ sudo make-start  
    $ sudo make-netcfg  
@@ -80,7 +81,8 @@ In order to modify the topology, changes need to be made to both the topo-v6.py 
     threads - The number of threads that generate flows in parallel in the experiment.  
     example: $ python copyDocker.py 20 50  
     Note: This script copies all the .csv files that were generated in the experiments from the docker to the computer.  
-          To alter the destination of the copied files on the computer, make adjustments to the script by modifying the "repository_path_pc".   
+          To alter the destination of the copied files on the computer, make adjustments to the script by modifying the "repository_path_pc".
+    '''    
 
 
 ## Origin work

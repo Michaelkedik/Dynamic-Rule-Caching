@@ -95,6 +95,3 @@ In order to modify the topology, changes need to be made to both the topo-v6.py 
 * ngsdn-tutorial - https://github.com/opennetworkinglab/ngsdn-tutorial  
 2. Traffic protocol is based on scapy python package.  
 
-
-## Useful links:  
-1. *complete when ONOS wiki returns to work*  
